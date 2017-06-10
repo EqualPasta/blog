@@ -11,7 +11,7 @@ Pasta'
 tagline:          'Dev blog'
 description:      'A dev blog about programming, unity, blender and maybe an occasional guide'
 url:              ''
-baseurl:          /
+baseurl:          /equalpasta/
 
 author:
   name:           'EqualPasta'
