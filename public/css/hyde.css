@@ -83,6 +83,22 @@ html {
   font-size: 3.25rem;
 }
 
+/* Pasta image */
+.sidebar-image-separator {
+  margin: auto;
+  opacity: 0.9;
+  margin-top: 0.7em;
+  margin-bottom: 0.7em;
+  width: 75%;
+}
+@media (min-width: 48em) {
+  .sidebar-image-separator {
+    margin: 0px;
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;
+  }
+}
+
 /* Sidebar nav */
 .sidebar-nav {
   margin-bottom: 1rem;
