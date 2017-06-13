@@ -40,7 +40,7 @@ I've since extended the game further by adding new features in order to try out 
 * Tweaked around with physics
 * More advanced camera. Set new targets, rotate camera and zoom.
 
-![Golf game]({{ site.url }}/assets/game-dev-progress-report.png)
+![Golf game]({{ site.url }}/assets/game-dev-progress-report/golfgame.png)
 
 Lately, I've been trying to learn 3D modelling in Blender, because the *not-so-small-anymore* game requires some custom 3D props now. This is an almost new area for me, at least Blender is. Again I started by doing some tutorial videos on YouTube, but found them not helpful at all. Blender is confusing, especially when you start off with tutorials that assume some existing knowledge of blender's layout and shortcuts. I therefore, bought a heavily discounted Blender course at [Udemy](https://www.udemy.com/blendertutorial/learn/v4/overview). This is a comprehensive course, and contains, like, 48 hours of material. So, making a couple of simple 3D props, quickly evolved to a much bigger project.
 
