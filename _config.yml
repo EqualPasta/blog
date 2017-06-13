@@ -10,8 +10,7 @@ title:            'Equal
 Pasta'
 tagline:          'Dev blog'
 description:      'A dev blog about programming, unity, blender and maybe an occasional guide'
-url:              ''
-baseurl:          /
+url:              http://www.equalpasta.com    
 
 author:
   name:           'EqualPasta'
@@ -19,9 +18,11 @@ author:
 
 paginate:         5
 
+google_analytics: UA-100824015-1
+
 # Custom vars
 version:          0.1.0
-gems: [jekyll-paginate]
+gems: [jekyll-paginate, jekyll-sitemap]
 
 github:
   repo:           https://github.com/EqualPasta
