@@ -1,0 +1,40 @@
+---
+layout: post
+title: How to: Gulp and ES2015 (ES6)
+date: '2017-06-18 17:35'
+---
+
+This weekend I decided to re-visit web development by looking at [Gulp](http://gulpjs.com/) and [React](https://facebook.github.io/react/). A friend and me did this project where we wanted to create small and shiny utility web apps with React. Most of the tools out there are not the easiest to use and visually not that appealing to put it mildly. So, we created an isomorphic/universal Express/React setup and created half a dozen of tools or so, ranging from a weather, white noise and country code lookup tool.
+
+We hosted the solution on [DigitalOcean](https://www.digitalocean.com/). The site has run for a couple of years now, but occasionally crashes. Now, it's been down now for a couple of months. Motivated by this, I've started to investigate the possibility of simplifying the tooling, separating the backend and frontend and migrating that site over to GitHub pages.
+
+![Gulp logo](/assets/2017/gulp-and-es2015/gulp-js.png)
+
+The first step is the tooling. We want some tasks that take the source code and transform it into a static web page. We also want each subpage to support React components. To do this transformation I decided to use [Gulp](http://gulpjs.com/). One of many task runners out there. In *Gulp 3.9.1* you define tasks using ECMAScript 5 (JavaScript ES5). However in *Gulp 4* you'll be able to do so with ES2015 (JavaScript ES6). Below you can find a small recipe on how to utilize ES2015 with Gulp.
+
+## New project using Gulp with ES2015
+* Create a new project by `npm init`
+* Install gulp v4:
+```bash
+  npm install gulpjs/gulp.git#4.0
+```
+* Install Babel:
+```bash
+  npm install --save-dev babel-register babel-preset-es2015
+```
+
+* Create a `.babelrc` file, and add:
+```json
+{
+  "presets": [ "es2015" ]
+}
+```
+* Place your gulp tasks in a file named `gulpfile.babel.js`, to avoid some potential issues.
+
+You'll now be able to define tasks using ES2015! For instance, you can use `const`, `let` and `import`. In addition you can define tasks using named functions. A lot of details can be found in [Gulp's v4 branch README file](https://github.com/gulpjs/gulp/tree/4.0).
+
+## Pitfalls
+Trying to convert gulp tasks from various ES5 samples can be challenging. They've changed the task execution system in Gulp v4. Previously you had to specify the order of execution by adding dependencies to the task's method signature. For example in task, `gulp.task('build', ['clean', 'concat'])`, the task *clean* and *concat* have to finish before the build task can start. In Gulp v4, you instead specify the order of execution by using `gulp.parallel` and `gulp.series`. This [article](https://www.joezimjs.com/javascript/complete-guide-upgrading-gulp-4/) explains how to specify dependencies for a Gulp v4 task well.
+
+## Sample
+This weekend's effort can be found on my GitHub page. The result is a very primitive static web page generator that supports React components, where Gulp tasks have been written with JavaScript ES2015. The repository can be found [here](https://github.com/EqualPasta/static-react-starter)
