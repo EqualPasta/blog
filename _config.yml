@@ -10,13 +10,13 @@ title:            'Equal
 Pasta'
 tagline:          'Dev blog'
 description:      'A dev blog about programming, unity, blender and maybe an occasional guide'
-url:              http://www.equalpasta.com    
+url:              http://www.equalpasta.com
 
 author:
   name:           'EqualPasta'
   url:            equalpasta@gmail.com
 
-paginate:         5
+paginate:         4
 
 google_analytics: UA-100824015-1
 
