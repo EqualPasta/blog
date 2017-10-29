@@ -1,10 +1,12 @@
 ---
-layout: "post"
-title: "Making a Bluetooth numpad. Part 1: Soldering and parts"
-date: "2017-10-26 20:50"
+layout: post
+title: 'Making a Bluetooth numpad. Part 1: Soldering and parts'
+date: '2017-10-29 23:31'
 ---
 
-I ended up upgraded my keyboard to a mechanical one a couple months back. A quick and simple purchase, I thought. How naïve. I went way down the rabbit hole on this one, reading obsessively about the tactile feedback of different switches, of the ergonomic advantages a TKL keyboard can provide, and really, just spent a lot of time looking at pretty keyboards on the [subreddit for mechanical keyboards](https://www.reddit.com/r/MechanicalKeyboards/). I even bough a switch tester. At first I wanted the impossible:
+I ended up upgraded my keyboard to a mechanical one a couple months back. A quick and simple purchase, I thought. Oh boy, I went way down the rabbit hole on this one, reading obsessively about the tactile feedback of different switches, of the ergonomic advantages a TKL keyboard can provide, and really, just spent a lot of time looking at pretty keyboards on the [subreddit for mechanical keyboards](https://www.reddit.com/r/MechanicalKeyboards/). I even bough a switch tester.
+
+At first I wanted the impossible:
 * A TLK keyboard
 * ISO layout
 * Good build quality. Preferably with a white/grey key and base
@@ -20,7 +22,7 @@ And by the way, this is my first experience with electronics, soldering and so o
 
 <br/>
 ## Overview
-This will probably a three part series:
+This will probably be a three part series:
 * [Soldering and parts](#)
 * [Firmware (Coming later)]()
 * [Enclosure (Coming later)]()
@@ -54,13 +56,13 @@ Since I've had no prior experience with electronics, I had to buy a lot of stuff
 
 <br/>
 ## Desolder the donor numpad
-The plan is to hand wire the [keyboard matrix](http://pcbheaven.com/wikipages/How_Key_Matrices_Works/) to the Adafruit feather microcontroller. Unfortunately, the donor numpad came pre assembled, which meant I had to desolder it. This was the first time desoldering, so I was glad I did not need to keep the PCB. Before I began I watched a couple of youtube videos on how to desolder and solder ([1](https://www.youtube.com/watch?v=N_dvf45hN6Y), [2](https://www.youtube.com/watch?v=oqV2xU1fee8)). In addition, I read the amazing[ soldering is easy comic](http://mightyohm.com/blog/2011/04/soldering-is-easy-comic-book/) by Mitch Altman, Andie Nordgren, and Jeff Keyzer.
+The plan is to hand wire the [keyboard matrix](http://pcbheaven.com/wikipages/How_Key_Matrices_Works/) to the Adafruit microcontroller. Unfortunately, the donor numpad came pre assembled, which meant I had to desolder it. This was the first time desoldering, so I was glad I did not need to keep the PCB. Before I began I watched a couple of youtube videos on how to desolder and solder ([1](https://www.youtube.com/watch?v=N_dvf45hN6Y), [2](https://www.youtube.com/watch?v=oqV2xU1fee8)). In addition, I read the amazing[ soldering is easy comic](http://mightyohm.com/blog/2011/04/soldering-is-easy-comic-book/) by Mitch Altman, Andie Nordgren, and Jeff Keyzer.
 
 ### Prepare the equipment
-Heated the soldering iron to around 370 degrees. Soldering wire is missing from the picture below. Safety goggles was also equipped at this point.
+Heated the soldering iron to around 370 degrees Celcius. Soldering wire is missing from the picture below. Safety goggles was also equipped at this point.
 ![Equipment](/assets/2017/making-a-bluetooth-numpad-part-1/equipment.JPG)
 
-We want to desolder all the switches and LEDs from the PCB, in order to free the metal plate from the PCB. We will later hand-wire the switches to the microcontroller.
+We want to desolder all the switches and LEDs from the PCB, in order to free the metal plate from the PCB. We will later hand wire the switches to the microcontroller.
 
 ![Detail](/assets/2017/making-a-bluetooth-numpad-part-1/detail.JPG)
 
@@ -88,7 +90,7 @@ On a numpad you want to end up with 4 rows of wires connected to all switches, a
 
 ![All components](/assets/2017/making-a-bluetooth-numpad-part-1/matrix-compare.JPG)
 
-R1 to Rn should each have a pull-up resistor (often integrated in MCU) which keeps the input at HIGH if switches in that row were not been pressed and LOW if any were pressed. Each column is scanned one at the time, when reading which switches have been pressed. This happens very fast so this iterative scanning is not noticeable. For instance, when C2 is scanned, C2 is set to LOW, and input R1 to Rn are read. If switch C2-R1 is pressed, it will close the circuit from R1 to C2 (ground), and make the input R1, LOW. Please read the links to get much better and more detailed picture of how these matrices work!
+R1 to Rn should each have a pull-up resistor (often integrated in the MCU) which keeps the input at HIGH if switches in that row were not pressed and LOW if any were pressed. Each column is scanned one at the time, when reading which switches have been pressed. This happens very fast so this iterative scanning is not noticeable. For instance, when C2 is scanned, C2 is set to LOW, and input R1 to Rn are read. If switch C2-R1 is pressed, it will close the circuit from R1 to C2 (ground), and make the input R1, LOW. Please read the links to get much better and more detailed picture of how these matrices work!
 
 <br/>
 
@@ -105,7 +107,7 @@ I had to glue some of the switches to the plate, but most fit snugly into the pl
 I then bent the diodes into shape. Did it for 5-6 diodes at the time. Bending the diodes using a pick tool was much simpler, and resulted in sharper angles.
 ![Bending diodes](/assets/2017/making-a-bluetooth-numpad-part-1/bending-diodes.JPG)
 
-Then you solder the bent diodes to top most connection of the switches in each column. A soldered column of diodes can be seen below. Note that the black band (cathode) must be placed correctly. It has low resistance to current in one direction but not the other. So do this carefully. You see how the diodes are soldered on below. Below the switch pin with the black band away from the connection.
+Then you solder the bent diodes to the top most connection of the switches in each column. A soldered column of diodes can be seen below. Note that the black band (cathode) must be placed correctly. It has low resistance to current in one direction but not the other. So do this carefully. You see how the diodes are soldered on below. Below the switch pin with the black band away from the connection.
 
 Another tip when soldering, is to start off by add some solder to all the switch pins. Then, place the diode correctly, touching the pin, and heat up the solder that is already on the pin.
 
@@ -220,6 +222,8 @@ void loop() {
 
 
 So, the numpad basically works. However, it does not act like a keyboard yet, and can't connect to a computer as a bluetooth device. An attempt at solving that will be done in the next post.
+
+Thank you for reading!
 
 <br/>
 ## References
