@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Software development timesaver #3'
+title: 'Software Development Timesaver #3'
 date: '2017-06-26 22:32'
 ---
 

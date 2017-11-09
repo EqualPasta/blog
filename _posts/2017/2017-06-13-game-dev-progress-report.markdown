@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Learning game development progress report
+title: Learning Game Development Progress Report
 date: '2017-06-13 18:29'
 ---
 

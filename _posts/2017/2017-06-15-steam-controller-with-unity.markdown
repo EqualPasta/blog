@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Steam controller with Unity
+title: Steam Controller with Unity
 date: '2017-06-15 21:51'
 ---
 
@@ -9,7 +9,7 @@ My current Unity game is a 4 player couch game. It's a turn based ball game, whe
 *The trick is to add Unity as a non-Steam game to your Steam library.*
 <br/>
 <br/>
-## Use Steam controller in Unity Editor recipe
+## Use Steam Controller in Unity Editor Recipe
 ### 1. Add Unity to your Steam library
 * Open Steam
 * Find Games in the Menu bar.
@@ -21,7 +21,7 @@ My current Unity game is a 4 player couch game. It's a turn based ball game, whe
 
 ![Add Unity to library](/assets/2017/steam-controller-with-unity/steam-add-library.png)
 <br>
-## 2. Configure the Steam controller
+## 2. Configure the Steam Controller
 * After you've added Unity to your Steam library, open `Big Picture`.
 * Make sure your Steam controller is on, and connected to Steam.
 * Find Unity in the library, and open it.

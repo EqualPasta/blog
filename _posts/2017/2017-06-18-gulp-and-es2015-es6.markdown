@@ -12,7 +12,7 @@ We hosted the solution on [DigitalOcean](https://www.digitalocean.com/). The sit
 
 The first step is the tooling. We want some tasks that take the source code and transform it into a static web page. We also want each subpage to support React components. To do this transformation I decided to use [Gulp](http://gulpjs.com/). One of many task runners out there. In *Gulp 3.9.1* you define tasks using ECMAScript 5 (JavaScript ES5). However in *Gulp 4* you'll be able to do so with ES2015 (JavaScript ES6). Below you can find a small recipe on how to utilize ES2015 with Gulp.
 
-## New project using Gulp with ES2015
+## New Project Using Gulp with ES2015
 * Create a new project by `npm init`
 * Install gulp v4:
 ```bash

@@ -12,8 +12,8 @@ Currently, I'm doing the [Learn 3D Modelling course](https://www.udemy.com/blend
 So I decided to try out UV map painting, to see if I could turn this nondescriptive shape into a bona fide chessboard.
 
 <br />
-## UV mapping in Blender recipe
-### 1. Adding seams
+## UV Mapping in Blender Recipe
+### 1. Adding Seams
 * The 3D model is complete and texturing is the next step. Your first step is to create seams to help Blender unwrap your model's surface onto a flat plane. The plane area is where you'll do the painting later on.
 * Enter edit mode `<TAB>`
 * Open the tools section in the left sidebar `<T>` of the 3D View
@@ -33,7 +33,7 @@ So I decided to try out UV map painting, to see if I could turn this nondescript
 ![Seams](/assets/2017/uv-mapping-in-blender-for-unity/seams.png)
 
 <br />
-### 2. Clean the UV map
+### 2. Clean the UV Map
 * Open a `UV/Image Editor` View. You will probably see something similar to this:
 
 ![UV map](/assets/2017/uv-mapping-in-blender-for-unity/uvmap.png)
@@ -49,7 +49,7 @@ So I decided to try out UV map painting, to see if I could turn this nondescript
 ![Island UV selection tool](/assets/2017/uv-mapping-in-blender-for-unity/reorganized.png)
 
 <br />
-### 3. Create the texture and UV layout image
+### 3. Create the Texture and UV Layout Image
 * Go to the `Texture` tab. Create a new texture.
 * Change `Type` from *none* to *Image or Video*
 * In the `Image` section, click new. Create a new image with width and height of 2048 and select a white color. Give it a sensible name. For instance, **chessboardtex**.
@@ -62,7 +62,7 @@ So I decided to try out UV map painting, to see if I could turn this nondescript
 * If you want to do the UV paining in an external program, such as Photoshop or Gimp, you'll probably want the UV layout as a reference when painting. Press `UVs` and in the menu, select `Export UV layout`.
 
 <br />
-### 4. UV paining
+### 4. UV Paining
 * Open an image editor (Photshop, Gimp or similar). Add the saved texture image and the UV layout image on top, in a new layer.
 
 ![Before paining](/assets/2017/uv-mapping-in-blender-for-unity/UVpaining.png)
@@ -73,7 +73,7 @@ So I decided to try out UV map painting, to see if I could turn this nondescript
 
 * In Blender's `UV/Image Editor`, go `Image` and press `Reload image`, to see the updated texture on your 3D model.
 
-### 5. Add model to Unity
+### 5. Add Model to Unity
 * When you're satisfied with the result you can save the model as a .blend file somewhere in the assets directory of your Unity project.
 
 * But where did the texture of the model go in Unity? Remember to copy the texture image into the Assets folder. You need to tell Unity to use the image for the model. I'm not sure if there is a better way of combining the texture and model into a single file, but the following seems to work fine.
@@ -84,7 +84,7 @@ So I decided to try out UV map painting, to see if I could turn this nondescript
 <br />
 You now have a textured model in Unity.
 
-### References
+### Further Reading
 [Separate vertices](https://blender.stackexchange.com/questions/3317/separate-selected-uv-map-vertices-from-surrounding-vertices)
 
 [Exporting & Editing UV Maps](https://www.youtube.com/watch?v=jdt_e78Dd64)

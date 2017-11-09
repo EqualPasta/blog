@@ -1,6 +1,6 @@
 ---
 layout: "post"
-title: "Multiple GitHub accounts on your computer"
+title: "Multiple GitHub Accounts on Your Computer"
 date: "2017-06-11 14:24"
 ---
 
@@ -10,8 +10,8 @@ The better part of this weekend have been spent setting up a Jekyll blog hosted 
 
 Since I've decided to use a pseudonym, I'm now forced to have two GitHub accounts to not give away my identity. I also want to push commits to repositories on both accounts, preferably without any manual steps. That means, handling a new SSH key and map repositories to the correct key. Below you'll find a recipe on how I did it.
 
-## Multiple accounts recipe
-### 1. Create a new SSH key
+## Multiple Accounts Recipe
+### 1. Create a new SSH Key
 Similar to [how you generated a key to use with your first account](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/), you will need to generate an additional SSH key for your second account. In your terminal window of choice (Git Bash for instance) write:
 
 ```bash
@@ -20,7 +20,7 @@ Similar to [how you generated a key to use with your first account](https://help
 
 Be careful not to overwrite your existing key. Add a suffix when prompted about where to save the file. For instance, `id_rsa_equalpasta`.
 
-### 2. Set up the SSH key
+### 2. Set up the SSH Key
 Add the SSH key to GitHub by first copying the new key:
 
 ```bash
@@ -36,7 +36,7 @@ Then, add the key to the SSH-agent on your machine:
   ssh-add ~/.ssh/id_rsa_equalpasta
 ```
 
-### 3. Create a SSH config file
+### 3. Create a SSH Config File
 To be able to use multiple GitHub accounts on your computer, you'll need a SSH config file where we list the different keys. We will later set up a Git repository to use the correct key when pushing commits.
 
 Create the config file:
@@ -61,7 +61,7 @@ Host github.com
 
 And save it.
 
-### 4.Set up of your repository
+### 4.Set up of Your Repository
 1. Clone your repository from GitHub, `git@github.com:EqualPasta/blog.git`.
 2. Cd into the folder and configure your Git. The name and email associated with each commit you push will be visible to GitHub and people in general. So, to change these values to something better suited for you, do:
 ```bash
@@ -83,7 +83,7 @@ git@`github.com-equalpasta`:EqualPasta/blog.git
 You should now, hopefully, be able to push commits to the repository. Existing repositories work as before, which means that you now can push to multiple accounts automatically.
 
 
-## Further reading
+## Further Reading
 [Codetuts: Multiple accounts](https://code.tutsplus.com/tutorials/quick-tip-how-to-work-with-github-and-multiple-accounts--net-22574)<br />
 [GitHub: Setup of SSH key](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)<br />
 [Jexchan: Multiple accounts](https://gist.github.com/jexchan/2351996)<br />

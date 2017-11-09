@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Making a Bluetooth numpad. Part 1: Soldering and parts'
+title: 'Making a Bluetooth Numpad. Part 1: Soldering and Parts'
 date: '2017-10-29 23:31'
 ---
 
@@ -24,11 +24,11 @@ And by the way, this is my first experience with electronics, soldering and so o
 ## Overview
 This will probably be a three part series:
 * [Soldering and parts](#)
-* [Firmware (Coming later)]()
+* [Software](2017/11/09//making-a-bluetooth-numpad-part-2-software)
 * [Enclosure (Coming later)]()
 
 <br/>
-## Buying the parts (and the long wait)
+## Buying the Parts (and the Long Wait)
 Since I've had no prior experience with electronics, I had to buy a lot of stuff. I'll create two lists below. The first will list some essentials for electronics work, and the next will list components needed to create the numpad. By the way, buying things off of eBay can be a slow affair, especially when it ships from China.
 
 **Essentials**
@@ -55,10 +55,10 @@ Since I've had no prior experience with electronics, I had to buy a lot of stuff
 * Wood Enclosure
 
 <br/>
-## Desolder the donor numpad
+## Desolder the Donor Numpad
 The plan is to hand wire the [keyboard matrix](http://pcbheaven.com/wikipages/How_Key_Matrices_Works/) to the Adafruit microcontroller. Unfortunately, the donor numpad came pre assembled, which meant I had to desolder it. This was the first time desoldering, so I was glad I did not need to keep the PCB. Before I began I watched a couple of youtube videos on how to desolder and solder ([1](https://www.youtube.com/watch?v=N_dvf45hN6Y), [2](https://www.youtube.com/watch?v=oqV2xU1fee8)). In addition, I read the amazing[ soldering is easy comic](http://mightyohm.com/blog/2011/04/soldering-is-easy-comic-book/) by Mitch Altman, Andie Nordgren, and Jeff Keyzer.
 
-### Prepare the equipment
+### Prepare the Equipment
 Heated the soldering iron to around 370 degrees Celcius. Soldering wire is missing from the picture below. Safety goggles was also equipped at this point.
 ![Equipment](/assets/2017/making-a-bluetooth-numpad-part-1/equipment.JPG)
 
@@ -70,7 +70,7 @@ Each switch had 4 through-hole connection points. 2 for the LED and 2 for the sw
 
 ![PCB](/assets/2017/making-a-bluetooth-numpad-part-1/pcb-pre.JPG)
 
-### Melt all the solder!
+### Melt All the Solder!
 It will probably take some tries before you get a good technique on how to melt the solder and remove it with the soldering pump before it solidifies. I found that the most effective way was to add a bit of solder to the connection to properly melt to solder. When it melted I would quickly and forcefully put the tip around the hole to form a vacuum before sucking the solder into the pump.
 ![PCB after some desoldering](/assets/2017/making-a-bluetooth-numpad-part-1/pcb-after.JPG)
 
@@ -78,14 +78,14 @@ At some connections I failed, by only sucking out some of the solder. Typically 
 
 ![One key out](/assets/2017/making-a-bluetooth-numpad-part-1/key-out.JPG)
 
-### Store components
+### Store Components
 Below, you see the finished result. 21 switches, LEDs, and the metal plate. Most of the parts will play a part in the next section, when we hand-wire the switches back onto the metal plate.
 
 ![Recaimed components](/assets/2017/making-a-bluetooth-numpad-part-1/after.JPG)
 
 <br/>
 
-## The keyboard matrix
+## The Keyboard Matrix
 On a numpad you want to end up with 4 rows of wires connected to all switches, and 6 column connections to all switches through diodes. A good explanation of how a keyboard matrix works can be found [here](http://blog.komar.be/how-to-make-a-keyboard-the-matrix/) and [here](http://pcbheaven.com/wikipages/How_Key_Matrices_Works/). Make sure you somewhat understand the theory before beginning. I'll show a side by side comparison of the finished circuitry and the keyboard matrix diagram below. I mixed up row and column a bit when testing the numpad in the Arduino IDE, so an image as below would have been useful.
 
 ![All components](/assets/2017/making-a-bluetooth-numpad-part-1/matrix-compare.JPG)
@@ -94,7 +94,7 @@ R1 to Rn should each have a pull-up resistor (often integrated in the MCU) which
 
 <br/>
 
-## Hand wiring the numpad
+## Hand Wiring the Numpad
 While doing this step I followed [this guide](https://deskthority.net/workshop-f7/brownfox-step-by-step-t6050.html), closely. You'll need diodes, wire, the metal plate, stabilizers and switches to do this step.
 ![All components](/assets/2017/making-a-bluetooth-numpad-part-1/all-components.JPG)
 
@@ -226,7 +226,7 @@ So, the numpad basically works. However, it does not act like a keyboard yet, an
 Thank you for reading!
 
 <br/>
-## References
+## Further Reading
 
 [Solder comic](https://mightyohm.com/files/soldercomic/FullSolderComic_EN.pdf)
 

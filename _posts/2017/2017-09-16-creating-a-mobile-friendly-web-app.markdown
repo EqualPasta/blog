@@ -7,7 +7,7 @@ date: "2017-09-16 21:14"
 If you want your website to work well on a mobile device there are a lot to consider. My latest [project](http://unuseful.net/cooking-converter/) was made with mobile devices in mind. It is a simple cooking converter for recipes. Recipes might use an inconvenient or unfamiliar unit of measurement for an ingredients, such as cup or pound ( At least these units are inconvenient where I live). Having a way to convert the measure while being in the kitchen, cooking, would be nice. The tool was, therefore, made to work well on mobile devices. Below, I'll mention a couple of tricks that can make your web app work better with mobile devices.
 
 <br />
-## Home screen app icon and short name
+## Home Screen App Icon and Short Name
 Having a custom image and label on your users' home screens is a good thing. There are many favicon generators out there. [This](https://realfavicongenerator.net/) one works well. Upload your icon and you get favicons suitable for *iOS*, *Android* and *Metro*. Add all the favicons to your project, and add something similar to the code below to your page's *head* element:
 
 ```html
@@ -40,7 +40,7 @@ To improve the label your app will get on the home screen of mobile devices, add
   }
 ```
 <br />
-## Media queries
+## Media Queries
 Media queries are great for responsive web apps, and simple to use. It enables you to apply specific *CSS* styling depending on characteristics of the device. For instance, if the device's viewport width is less than 800px, use a smaller font size.
 
 ```scss
@@ -54,7 +54,7 @@ p {
 ```
 
 <br />
-## Preview layout in Chrome's devTools
+## Preview Layout in Chrome's DevTools
 Chrome devTools offer *Device Mode*, which enables you to test your responsive web app. See how it would approximately looks on a mobile or tablet device. This is a very nice feature to have when you're developing a mobile web app. To enable *Device Mode*, do:
 
 * Right click in Chrome and select *Inspect*, to start devTools.
@@ -72,7 +72,7 @@ In this view you can see how your responsive web app will behave in different re
 Please take a look [here](https://github.com/olavvatne/Unuseful/tree/master/app/tools/cooking-converter) if you want to see how *mobile-detect*, *media queries*, and *favicons and metadata* were used to create a somewhat mobile optimized web app.
 
 <br />
-## References
+## Further Reading
 [Home screen icon name](https://stackoverflow.com/questions/3400741/setting-home-screen-icon-name-for-mobile-safari)
 
 [Favicon generator](https://realfavicongenerator.net/)

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Software development timesaver #5'
+title: 'Software Development Timesaver #5'
 date: '2017-10-07 14:06'
 ---
 
@@ -16,7 +16,7 @@ git checkout --theirs project/ui.designer.cs
 
 The flags, `--ours` and `--theirs`, control which *ui.designer.cs* file to pick. There exists two, one in each branch, they are different, and you want only one of them. Unfortunately, the flags switch role depending on whether you are rebasing or merging... I always get confused by this... So to illustrate the difference clearly, let us say that, for instance, you have a **feature** and a **master** branch. Then the flags will do the following:
 
-## Merging master with feature
+## Merging Master with Feature
 ```
 git checkout feature
 git merge master
@@ -24,7 +24,7 @@ git merge master
 * `--ours` - Picks file in feature
 * `--theirs` - Picks file in master
 
-## Rebasing feature onto master
+## Rebasing Feature onto Master
 ```
 git checkout feature
 git rebase master
