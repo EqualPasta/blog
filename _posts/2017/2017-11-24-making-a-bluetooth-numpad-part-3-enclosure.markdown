@@ -1,7 +1,7 @@
 ---
-layout: "post"
-title: "Making a Bluetooth Numpad. Part 3: Enclosure"
-date: "2017-11-19 12:32"
+layout: post
+title: 'Making a Bluetooth Numpad. Part 3: Enclosure'
+date: '2017-11-24 20:04'
 ---
 
 First, electronics, then software, and now woodworking. No wonder making a custom keyboard can be this exciting. In this part you will find mostly pictures of the process, including some remarks. Then, I'll do a small conclusion of what worked and areas that can be improved upon.
@@ -180,7 +180,13 @@ Found some adhesive rubber feet lying around, so I applied them to the bottom of
 
 ![Rubber feet](/assets/2017/making-a-bluetooth-numpad-part-3/rubber-feet.JPG)
 
-TODO: KEY CAPS
+The key caps came in the mail a week after. Ordered them from AliExpress.
+![Key caps](/assets/2017/making-a-bluetooth-numpad-part-3/key-caps.JPG)
+
+![Key caps](/assets/2017/making-a-bluetooth-numpad-part-3/finished-1.JPG)
+![Key caps](/assets/2017/making-a-bluetooth-numpad-part-3/front2.JPG)
+![Key caps](/assets/2017/making-a-bluetooth-numpad-part-3/finished-2.JPG)
+
 
 ## Conclusion
 In conclusion, I would say the numpad is functional. It works. However, there are a lot of things that could have been improved.
@@ -195,4 +201,4 @@ In conclusion, I would say the numpad is functional. It works. However, there ar
 
 * I could also have removed the switch that switch between USB and Bluetooth. This could have been done with a special numpad key combo included in the software.
 
-Including the tools and material bought to do this project, it is one expensive numpad! However, can't set a price on having fun. Productivity in Excel will go through the roof.
+Including the tools and material bought to do this project, it is one expensive numpad! However, can't set a price on having fun. Plus, productivity in Excel will go through the roof with this device!
