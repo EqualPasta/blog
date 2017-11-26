@@ -4,6 +4,23 @@ title: 'Making a Bluetooth Numpad. Part 1: Soldering and Parts'
 date: '2017-10-29 23:31'
 ---
 
+## Preface
+The best way to begin this post is maybe with an after photo. So here it is:
+![Obligatory after photo](/assets/2017/making-a-bluetooth-numpad-part-3/top-down-finished.JPG)
+
+This was a fairly large project, so it made sense to split it into three posts. Each part goes into the different aspects of this project. Electronics, software and woodworking.
+
+Below you'll find a link to each of the posts:
+* [Soldering and parts](/2017/10/29/making-a-bluetooth-numpad-part-1-soldering-and-parts)
+* [Software](/2017/11/09/making-a-bluetooth-numpad-part-2-software)
+* [Enclosure](/2017/11/24/making-a-bluetooth-numpad-part-3-enclosure)
+
+Hope you find the project interesting!
+
+<br>
+<br>
+
+## Part 1
 I ended up upgraded my keyboard to a mechanical one a couple months back. A quick and simple purchase, I thought. Oh boy, I went way down the rabbit hole on this one, reading obsessively about the tactile feedback of different switches, of the ergonomic advantages a TKL keyboard can provide, and really, just spent a lot of time looking at pretty keyboards on the [subreddit for mechanical keyboards](https://www.reddit.com/r/MechanicalKeyboards/). I even bough a switch tester.
 
 At first I wanted the impossible:
@@ -20,12 +37,6 @@ The keyboard is missing a numpad, as you can see, which is ok 90% of the time. B
 
 And by the way, this is my first experience with electronics, soldering and so on. The guide might, therefore, be helpful to other novices out there.
 
-<br/>
-## Overview
-This will probably be a three part series:
-* [Soldering and parts](/2017/10/29/making-a-bluetooth-numpad-part-1-soldering-and-parts)
-* [Software](/2017/11/09/making-a-bluetooth-numpad-part-2-software)
-* [Enclosure](/2017/11/24/making-a-bluetooth-numpad-part-3-enclosure)
 
 <br/>
 ## Buying the Parts (and the Long Wait)

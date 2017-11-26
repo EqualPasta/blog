@@ -6,8 +6,6 @@ date: '2017-11-24 20:04'
 
 First, electronics, then software, and now woodworking. No wonder making a custom keyboard can be this exciting. In this part you will find mostly pictures of the process, including some remarks. Then, I'll do a small conclusion of what worked and areas that can be improved upon.
 
-![Numpad beside the keyboard](/assets/2017/making-a-bluetooth-numpad-part-3/top-down-finished.JPG)
-
 <br>
 ## Procuring Materials and Equipment
 Not done much woodworking before, so I had to buy most of the tools and materials. I did manage to borrow a table saw and a miter saw. Below I'll list everything:
