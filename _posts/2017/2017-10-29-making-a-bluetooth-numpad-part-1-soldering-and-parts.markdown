@@ -23,9 +23,9 @@ And by the way, this is my first experience with electronics, soldering and so o
 <br/>
 ## Overview
 This will probably be a three part series:
-* [Soldering and parts](#)
-* [Software](2017/11/09//making-a-bluetooth-numpad-part-2-software)
-* [Enclosure (Coming later)]()
+* [Soldering and parts](/2017/10/29/making-a-bluetooth-numpad-part-1-soldering-and-parts)
+* [Software](/2017/11/09/making-a-bluetooth-numpad-part-2-software)
+* [Enclosure](/2017/11/24/making-a-bluetooth-numpad-part-3-enclosure)
 
 <br/>
 ## Buying the Parts (and the Long Wait)

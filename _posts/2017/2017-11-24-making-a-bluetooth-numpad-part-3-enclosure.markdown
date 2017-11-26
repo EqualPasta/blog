@@ -6,6 +6,8 @@ date: '2017-11-24 20:04'
 
 First, electronics, then software, and now woodworking. No wonder making a custom keyboard can be this exciting. In this part you will find mostly pictures of the process, including some remarks. Then, I'll do a small conclusion of what worked and areas that can be improved upon.
 
+![Numpad beside the keyboard](/assets/2017/making-a-bluetooth-numpad-part-3/top-down-finished.JPG)
+
 <br>
 ## Procuring Materials and Equipment
 Not done much woodworking before, so I had to buy most of the tools and materials. I did manage to borrow a table saw and a miter saw. Below I'll list everything:
@@ -187,6 +189,7 @@ The key caps came in the mail a week after. Ordered them from AliExpress.
 ![Key caps](/assets/2017/making-a-bluetooth-numpad-part-3/front2.JPG)
 ![Key caps](/assets/2017/making-a-bluetooth-numpad-part-3/finished-2.JPG)
 
+A short video of the device in action, can be found [here](https://www.youtube.com/watch?v=4i62P4UA_ms).
 
 ## Conclusion
 In conclusion, I would say the numpad is functional. It works. However, there are a lot of things that could have been improved.
@@ -199,6 +202,6 @@ In conclusion, I would say the numpad is functional. It works. However, there ar
 
 * Adding a blue led to indicate if the numpad is in USB or Bluetooth mode would have been nice to have.
 
-* I could also have removed the switch that switch between USB and Bluetooth. This could have been done with a special numpad key combo included in the software.
+* I could also have removed the switch that switch between USB and Bluetooth. This could have been done with a special numpad key combo that I could include in the software.
 
 Including the tools and material bought to do this project, it is one expensive numpad! However, can't set a price on having fun. Plus, productivity in Excel will go through the roof with this device!
