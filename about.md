@@ -4,7 +4,7 @@ title: About
 ---
 
 Hello, and welcome to this blog. I'll mostly be posting about things that interest me, in areas
-related to software development. Recently, I've taken an interest in Unity 3d and I am making progress in learning how to use Blender.
+related to software development, but also not exclusively so.
 
 As for me, I'm a dude from Norway, and have recently graduated and is now working full time at a company as a software developer. In my spare time, of which I can spare, I try invest some time in fun hobby project. Which I guess you'll be reading about here.
 

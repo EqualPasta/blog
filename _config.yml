@@ -9,8 +9,9 @@ permalink:        pretty
 title:            'Equal
 Pasta'
 tagline:          'Dev blog'
-description:      'A dev blog about programming, unity, blender and maybe an occasional guide'
-url:              http://www.equalpasta.com
+description:      'A blog about programming, unity, hobbies, and maybe an occasional guide.'
+url:              https://www.equalpasta.com
+enforce_ssl:      equalpasta.com
 
 author:
   name:           'EqualPasta'
