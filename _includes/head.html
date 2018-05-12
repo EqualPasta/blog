@@ -14,6 +14,10 @@
     {% endif %}
   </title>
 
+  {% if page.headerimg %}
+      <meta property="og:image" content="{{ site.url }}/{{ page.headerimg }}" />
+  {% endif %}
+
   <!-- CSS -->
   <link rel="stylesheet" href="{{ site.url }}/public/css/poole.css">
   <link rel="stylesheet" href="{{ site.url }}/public/css/syntax.css">
