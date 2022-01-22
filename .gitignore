@@ -10,7 +10,6 @@
 .ruby-version
 .sass-cache
 /vendor
-Gemfile.lock
 _site/
 bin/
 bbin/

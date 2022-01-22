@@ -1,0 +1,13 @@
+version: "3"
+services:
+  jekyll:
+    image: jekyll/jekyll:3.8.6
+    environment:
+      - JEKYLL_ENV=development
+    command: bundle exec jekyll serve --force_polling --incremental --config _config.yml --host 0.0.0.0
+    # command: bundle install
+    ports:
+      - 4000:4000
+    volumes:
+      - .:/srv/jekyll
+      - ./vendor/bundle:/usr/local/bundle:cached
