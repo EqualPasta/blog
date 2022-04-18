@@ -12,7 +12,7 @@ Add and update date:
 ---
 layout: post
 title: 'Software Development Timesaver #7'
-date: '2022-01-22 14:30'
+date: '2022-01-22 14:20'
 ---
 ```
 
